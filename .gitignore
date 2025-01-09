@@ -1,0 +1,6 @@
+.env
+.idea/
+rag_pdf/db
+__pycache__/
+*.pkl
+markdown/*
