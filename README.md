@@ -6,9 +6,37 @@ This Demo is linked to an Introduction to Autonomous Agent
 This demo is based on a template provided by Tyler Ai.
 
 ## Setup
+
+### Ollama Installation
+Download the ollama app from [this link](https://ollama.com/download/linux).
+
+Once done, you can install the model of your choice (we choosed phi4 14B by default for better results) by running the following command:
+```bash
+ollama pull phi4
+```
+
+Then you can start the ollama app by running the following command:
+```bash
+ollama serve
+```
+The text `Ollama is running` should appear at http://localhost:11434/ on your web browser.
+
+### Python Setup
+
 ```bash
 pip install -r requirements.txt
 ```
+
+### Running the Demo
+
+```bash
+python demo.py
+```
+
+Caution: The demo can take a few minutes to run, depending of the choosen model.
+If you didn't picked the phi4 14B model, you need to edit the `localllm.py` file to use yours.
+
+
 
 ### Dual Windows-Linux setup to use ollama local api from Windows.
 
