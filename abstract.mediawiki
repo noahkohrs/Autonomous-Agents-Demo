@@ -1,0 +1,95 @@
+== Introduction aux Agents d'Intelligence Artificielle (IA) Autonomes ==
+
+= Auteur =
+* Noah KOHRS, noah DOT kohrs AT etu DOT univ-grenoble-alpes DOT fr
+* Thibaut HABERER, thibaut DOT haberer AT etu DOT univ-grenoble-alpes DOT fr
+
+=== Résumé ===
+
+Les agents d'intelligence artificielle (IA) autonomes sont des programmes logiciels capables d'interagir avec leur environnement, de collecter des données et d'utiliser ces informations pour accomplir de manière autonome des tâches prédéfinis. Bien que les objectifs soient définis par nous, programmeurs (ou humains en général), les agents IA déterminent eux mêmes les actions optimales à réaliser ainsi que leur étapes intermédiaire. 
+
+Par exemple, un agent IA dans un centre de contact peut résoudre des requêtes clients en posant des questions, en consultant des documents internes et en fournissant des solutions appropriées.
+
+=== Mots-Clés ===
+
+* '''Agent intelligent''' : Programme capable de prendre des décisions autonomes basées sur des perceptions de son environnement.
+* '''Rationalité''' : Capacité d'un agent à agir de manière optimale pour atteindre ses objectifs.
+* '''Environnement''' : Contexte ou domaine dans lequel l'agent opère et collecte des données.
+* '''Effecteur''' : Élément physique ou virtuel permettant à l'agent d'interagir avec son environnement.
+
+=== Synthèse ===
+
+==== Introduction ====
+
+Les agents d'intelligence artificielle représentent une avancée majeure dans le développement de systèmes capables d'effectuer un large éventail des tâches complexes sans intervention humaine directe. Ils sont conçus pour percevoir leur environnement, prendre des décisions rationnelles et agir de manière autonome pour atteindre des objectifs spécifiques.
+
+* '''Percevoir leur environnement''' : Grâce à des capteurs physiques ou des interfaces logicielles, les agents collectent des données pertinentes.
+* '''Prendre des décisions rationnelles''' : En analysant les données perçues, ils déterminent les actions optimales pour atteindre leurs objectifs.
+* '''Agir de manière autonome''' : Ils exécutent les actions choisies sans ou avec peu d'intervention humaine directe.
+
+==== Composants Clés de l'Architecture d'un Agent IA ====
+
+On peut décomposer le fonctionnememnt des agents autonomes en plusieurs étapes qui n'ont pas toutes besoin d'être réalisé :
+
+* '''Determination de l'objectif''' : Selon les types d'agents, l'objectif est soit déterminé pendant l'execution ou avant.
+* '''Acquisition des informations''' : On collecte les informations qui vont etre utilisé. Les données peuvent etre récupéré par des capteurs physiques, des APIs, etc...
+* '''Prise de décisions''' : À partir des données qui ont été récupéré, le module de décisions va choisir quelles actions vont être effectués.
+* '''Réalisation des actions''' : L'agent va utiliser les différents effecteurs dont il dispose pour interagir avec son environnement. Un effecteur agit sur le monde physique (e.g.: bras robotique, four, lampe éléctrique) ou sur un système informatique (e.g.: notification, lancement d'un programme, requête http, ...).
+* '''Apprentissage''' : L'agent va prendre en compte les actions qu'il a effectué dans le passsé pour adapter ses futures actions.
+
+==== Types d'Agents IA ====
+
+Les agents IA peuvent être classés en plusieurs catégories, notamment :
+
+* '''Agents réactifs''' : Répondent directement aux stimuli de l'environnement. Ils peuvent ou non posséder un modèle interne pour comprendre et prédire l'état de l'environnement.
+* '''Agents basés sur des objectifs''' : Orientés vers l'accomplissement d'objectifs spécifiques, avec une planification stratégique.
+* '''Agents basés sur des utilités''' : Cherchent à maximiser une fonction d'utilité, évaluant les bénéfices potentiels de différentes actions. Par exemple, un agent autonome effectuant des transactions sur les marchés financier va vouloir optimiser ses gains.
+* '''Agents d'apprentissage''' : tire continuellement des lecons de ses expérience précedentes pour améliorer ses résultats. Ce qui permet une grande capacité d'adaptation.
+* '''Agents hierarchique''' : Planifie les taches qu'il a besoin pour réaliser son objectif pour ensuite, déléguer leur réalisation à d'autres agents plus ou moins complexe.
+
+Il est bon de rappeler que tout particulierement pour les agents IA, ces catégories ne sont pas mutuellement exclusives et peuvent être combinées pour souvent donner un spectre plus large de capacités. 
+
+==== Avantages des Agents IA ====
+
+L'utilisation d'agents IA offre plusieurs avantages, tels que :
+
+* '''Automatisation''' : Réalisation de tâches sans intervention humaine.
+* '''Adaptabilité''' : L'environnement des agents peut généralement être facilement modifié pour faire évoluer les tâches, leur outils, leurs contexte.
+* '''Champ des possibles''' : Les modèles d'agents peuvent être adaptéé à un grand nombre de tâches, ces dernières n'étant limité que par la capacité de l'agent à percevoir et agir dans son environnement controlé ainsi que par sa couverture API.
+* '''Séparation des tâches''' : En travaillant ensemble, les agents peuvent être chacuns spécialisés dans une tâche spécifique, évitant le besosin de faire appel à des modèles multimodaux gigantesques pour des tâches complexes.
+
+==== Défis Associés aux Agents IA ====
+
+Pour le moment, la démocratisation d'agents autonomes se heurte à des defis technique et des limites. Parmi eux, on compte:
+
+* '''Probème de précisions et d'alignement''' : Les agents IA peuvent ne pas toujours prendre des décisions conformes aux attentes des humains, il est donc impéératif de bien définir les objectifs et les contraintes.
+* '''Limitations éthiques''' : Considérations sur l'impact des décisions autonomes.
+* '''Dépendance aux données et aux interfaces''' : Les agents IA dépendent de la qualité des données et des interfaces pour fonctionner correctement pour un grand nombre de tâches. 
+
+==== Conclusion et Perspectives ====
+
+Les agents d'intelligence artificielle représentent une avancée majeure dans le domaine de l'automatisation et de la prise de décision autonome. Avec les progrès continus de la technologie et de l'apprentissage automatique, ils sont appelés à jouer un rôle de plus en plus important dans divers secteurs, améliorant l'efficacité et ouvrant de nouvelles perspectives d'innovation.
+
+Toutefois, le usages majeures sont aujourd'hui majoritairement de la recherche ou du propriétaire (Apple, Google, Amazon, etc.), il est donc important de réaliser que nous sommes au tout début de cette facon d'utilier l'IA et que cela prend de l'importance chaque jour.
+
+Aujourd'hui, ces agents insérent peu à peu dans nos smartphones et nos voitures. Demain, il est problable qu'il soient dans tous nos appareils connectés et plus proactifs que jamais.
+
+
+=== Demo ===
+
+La démonstration est disponible sur [https://github.com/noahkohrs/Autonomous-Agents-Demo GitHub] si vous souhaitez experimenter avec les Agents IA. 
+
+=== Sources ===
+
+[https://www.wsj.com/articles/how-are-companies-using-ai-agents-heres-a-look-at-five-early-users-of-the-bots-26f87845 How Are Companies using AI Agents]
+[https://botpress.com/fr/blog/quels-sont-les-differents-types-d-agents-de-l-intelligence-artificielle Les différents types d'agents IA]
+[https://www.allaboutai.com/fr-fr/agents-ai/vehicules-autonomes/ Agents IA dans les Véhicules Autonomes : Sécurité et Efficacité]
+[https://github.com/e2b-dev/awesome-ai-agents Groupement of Open Source tools & projects utilizing AI Agents]
+[https://www.ibm.com/think/topics/ai-agents IBM Think : AI Agents]
+[https://www.ibm.com/think/topics/ai-agents-vs-ai-assistants AI Agents vs AI Assistants]
+[https://datafranca.org/wiki/Agent_autonome Agent Autonome]
+[https://www.techopedia.com/definition/autonomous-agent Techopedia : Autonomous Agent]
+[https://www.cs.uml.edu/~holly/91.549/readings/maes94modeling.pdf Modeling Autonomous Agents]
+[https://aws.amazon.com/what-is/ai-agents/ What is AI Agents?]
+[https://www.researchgate.net/profile/Harko-Verhagen/publication/2839141_Norm_Autonomous_Agents/links/00b49521de0136d063000000/Norm-Autonomous-Agents Norm Autonomous Agents]
+[https://theses.hal.science/tel-00135931v1/file/th_hanon_final.pdf Norm Autonomous Agents]
